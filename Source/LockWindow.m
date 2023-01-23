@@ -31,7 +31,8 @@
   [super initWithContentRect:NSMakeRect(0, 0, resolution.width, resolution.height) styleMask:NSBorderlessWindowMask backing:NSBackingStoreBuffered defer:NO];
   [[self contentView] addSubview:wallpaper];
 
-  [self setIsVisible:YES];
+  // [self setIsVisible:YES];
+  [self orderFrontRegardless];
   [self setLevel: NSScreenSaverWindowLevel-1];
   [self setAutodisplay: YES];
   [self makeFirstResponder: self];
